@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Snake.Game.Classes;
-using Snake.Game.UI;
 
 namespace Snake.Game.Visual.UI {
     public class Progressbar : Widget {

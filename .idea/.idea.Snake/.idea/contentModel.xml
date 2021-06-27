@@ -28,7 +28,7 @@
         </e>
         <e p="Main.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="Snake.AssemblyInfo.cs" t="Include" />
             </e>

@@ -2,9 +2,8 @@
 using System;
 using System.Collections.Generic;
 using Snake.Game.Classes;
-using Snake.Game.Visual;
 
-namespace Snake.Game.UI {
+namespace Snake.Game.Visual {
     public abstract class Widget : IComparable {
         protected SortedSet<Widget> SubWidgets = new SortedSet<Widget>();
         protected Cell RelativeLocation = new Cell(0, 0);

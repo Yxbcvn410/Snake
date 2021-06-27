@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.Timers;
 using Snake.Game.Classes;
-using Snake.Game.UI;
 using Snake.Game.Visual;
 using Snake.Game.Visual.UI;
 

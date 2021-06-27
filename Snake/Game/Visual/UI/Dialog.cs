@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Snake.Game.Classes;
 
-namespace Snake.Game.UI {
+namespace Snake.Game.Visual.UI {
     public class Dialog : Widget {
         private readonly TextBox _captionBox;
 

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Snake.Game.Classes;
-using Snake.Game.UI;
 
 namespace Snake.Game.Visual.UI {
     public class GameUi : Widget {
@@ -88,19 +87,17 @@ namespace Snake.Game.Visual.UI {
                     InitUi();
                 }
                 else {
-                    Environment.Exit(0);
+                    IsActive = false;
                 }
             }
             else if (_exitDialog.IsVisible && _exitDialog.SelectedIndex != -1) {
-                if (_exitDialog.SelectedIndex == 0) {
-                    Environment.Exit(0);
-                }
-                else {
+                if (_exitDialog.SelectedIndex == 0)
+                    IsActive = false;
+                else
                     _exitDialog.IsVisible = false;
-                }
             }
             else {
-                var hitItems = _terrain.FieldItems.Where(item => item.Cell == _terrain.Snake.Head);
+                var hitItems = _terrain.FieldItems.Where(item => item.Cell.Equals(_terrain.Snake.Head));
                 foreach (var item in hitItems)
                     item.ApplyBehaviour();
 

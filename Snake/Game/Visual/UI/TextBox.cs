@@ -1,6 +1,5 @@
 ﻿using System;
 using Snake.Game.Classes;
-using Snake.Game.UI;
 
 namespace Snake.Game.Visual.UI {
     public enum TextAlignment {
